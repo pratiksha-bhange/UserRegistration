@@ -21,9 +21,7 @@ namespace User_Registration_Using_Regex
             Console.WriteLine("Enter the email = ");
             string email = Console.ReadLine();
             Console.WriteLine(userRegistration.validateEmail(email));
-            Console.WriteLine("Enter the mobile no format = ");
-            string mobileNoFormat = Console.ReadLine();
-            Console.WriteLine(userRegistration.validateMobileNoFormat(mobileNoFormat));
+            
         }
     }
 }
