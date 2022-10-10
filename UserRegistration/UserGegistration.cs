@@ -10,7 +10,7 @@ namespace UserRegistration
         public static string NAME_PATTERN = "^[A-Z]{1}[a-z]{2,}$";
         public static string EMAIL_PATTERN = "^[a-z]{3,}[1-9]{1,4}[@][a-z]{4,}[.][a-z]{3,}$";
         public static string MOBILENOFORMAT_PATTERN = "^[0-9]{2}[ ][0-9]{10}$";
-        public static string PASSWORD_PATTERN = "^[A-Z]{1}[a-z]{7,}";
+        public static string PASSWORD_PATTERN = "^[A-Z]{1}[a-z]{6,}[0-9]{1}";
         public bool validateFirstName(String firstName)
         {
             return Regex.IsMatch(firstName, NAME_PATTERN);
