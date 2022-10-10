@@ -32,6 +32,10 @@ namespace User_Registration_Using_Regex
             string password = Console.ReadLine();
             Console.WriteLine(userRegistration.validatePassword(password));
 
+            Console.WriteLine("Email sample validator");
+            EmailSample emailSamples = new EmailSample();
+            emailSamples.validateEmail();
+
         }
     }
 }
