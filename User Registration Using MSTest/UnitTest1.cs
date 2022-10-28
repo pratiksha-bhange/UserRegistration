@@ -14,7 +14,7 @@ namespace User_Registration_Using_MSTest
             public void GivenWrongFirstName_ShouldReturnFalse()
             {
                 //Arrange
-                string firstName = "poonam";
+                string firstName = "pratu";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = false;
                 //Act
@@ -26,7 +26,7 @@ namespace User_Registration_Using_MSTest
             public void GivenCorrectFirstName_ShouldReturnTrue()
             {
                 //Arrange
-                string firstName = "Poonam";
+                string firstName = "Pratu";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = true;
                 //Act
@@ -40,7 +40,7 @@ namespace User_Registration_Using_MSTest
             public void GivenWrongLastName_ShouldReturnFalse()
             {
                 //Arrange
-                string lastName = "budde";
+                string lastName = "bhange";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = false;
                 //Act
@@ -52,7 +52,7 @@ namespace User_Registration_Using_MSTest
             public void GivenCorrectLastName_ShouldReturnTrue()
             {
                 //Arrange       
-                string lastName = "Budde";
+                string lastName = "Bhange";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = true;
                 //Act
@@ -78,7 +78,7 @@ namespace User_Registration_Using_MSTest
             public void GivenCorrectEmail_ShouldReturnTrue()
             {
                 //Arrange
-                string Email = "buddepoonam123@gmail.com";
+                string Email = "bhangepratu123@gmail.com";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = true;
                 //Act
@@ -92,7 +92,7 @@ namespace User_Registration_Using_MSTest
             public void GivenWrongPhoneNumber_ShouldReturnFalse()
             {
                 //Arrange
-                string phoneNumber = "952911129589";
+                string phoneNumber = "751799595859";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = false;
                 //Act
