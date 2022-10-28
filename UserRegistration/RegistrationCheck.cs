@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace UserRegistration
 {
-    public class UserRegistration1
+    public class RegistrationCheck
     {
         public static string NAME_PATTERN = "^[A-Z]{1}[a-z]{2,}$";
         public static string EMAIL_PATTERN = "^[a-z]{3,}[1-9]{1,4}[@][a-z]{4,}[.][a-z]{3,}$";
@@ -38,3 +38,5 @@ namespace UserRegistration
         }
     }
 }
+    
+
