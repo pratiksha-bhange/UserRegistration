@@ -7,6 +7,7 @@ namespace UserRegistration
     {
         public static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to User Registration Programs using Regex");
 
             UserRegistration1 userRegistration = new UserRegistration1();
@@ -30,6 +31,10 @@ namespace UserRegistration
             Console.WriteLine("Enter the password = ");
             string password = Console.ReadLine();
             Console.WriteLine(userRegistration.ValidatePassword(password));
+
+            Console.WriteLine("Email sample validator");
+            EmailSample emailSamples = new EmailSample();
+            emailSamples.ValidateEmail();
         }
     }
 }
