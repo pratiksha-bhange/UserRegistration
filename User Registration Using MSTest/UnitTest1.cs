@@ -91,7 +91,7 @@ namespace User_Registration_Using_MSTest
             [TestMethod]
             public void GivenWrongPhoneNumber_ShouldReturnFalse()
             {
-                //Arrange
+                //
                 string phoneNumber = "7517995958";
                 UserRegistration1 userRegistration = new UserRegistration1();
                 bool expected = false;
