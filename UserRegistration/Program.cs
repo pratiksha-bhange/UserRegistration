@@ -5,9 +5,8 @@ namespace UserRegistration
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-
             Console.WriteLine("Welcome to User Registration Programs using Regex");
 
             UserRegistration1 userRegistration = new UserRegistration1();

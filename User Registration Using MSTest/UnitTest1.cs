@@ -158,5 +158,86 @@ namespace User_Registration_Using_MSTest
                 Assert.AreEqual(result, "Entry is not successful");
             }
         }
+        // UC12 - Test case to take Custom Exception for Invalid First Name.
+        [TestMethod]
+        [DataRow("pratu")]
+        public void GivenFirstName_WhenInvalid_ThenShouldThrow_InvalidFirstNameException(string firstName)
+        {
+            try
+            {
+                RegistrationCheck registrationCheck = new RegistrationCheck();
+                registrationCheck.CheckFirstName(firstName);
+            }
+            catch (UserRegistrationException ex)
+            {
+                Assert.AreEqual("Invalid First Name Format", ex.Message);
+            }
+        }
+
+        // UC12 - Test case to take Custom Exception for Invalid Last Name.
+        [TestMethod]
+        [DataRow("bhange")]
+        public void GivenLastName_WhenInvalid_ThenShouldThrow_InvalidLastNameException(string lastName)
+        {
+            try
+            {
+                RegistrationCheck registrationCheck = new RegistrationCheck();
+                registrationCheck.CheckLastName(lastName);
+            }
+            catch (UserRegistrationException exception)
+            {
+                Assert.AreEqual("Invalid Last Name Format", exception.Message);
+            }
+        }
+
+        // UC12 - Test case to take Custom Exception for Invalid Email.
+        [TestMethod]
+        [DataRow("abc@.com.my")]
+        public void GivenEmail_WhenInvalid_ThenShouldThrow_InvalidEmailException(string email)
+        {
+            try
+            {
+                RegistrationCheck registrationCheck = new RegistrationCheck();
+                registrationCheck.CheckEmail(email);
+            }
+            catch (UserRegistrationException exception)
+            {
+                Assert.AreEqual("Invalid Email Format", exception.Message);
+            }
+        }
+
+        // UC12 - Test case to take Custom Exception for Invalid Phone Number.
+        [TestMethod]
+        [DataRow("7517995958")]
+        public void GivenMobileFormat_WhenInvalid_ThenShouldThrow_InvalidMobileFormatException(string phoneNumber)
+        {
+            try
+            {
+                RegistrationCheck registrationCheck = new RegistrationCheck();
+                registrationCheck.CheckMobile(phoneNumber);
+            }
+            catch (UserRegistrationException exception)
+            {
+                Assert.AreEqual("Invalid Mobile Number Format", exception.Message);
+            }
+        }
+
+        // UC12 - Test case to take Custom Exception for Invalid Password.
+        [TestMethod]
+        [DataRow("pass@123")]
+        public void GivenPasswordFormat_WhenInvalid_ThenShouldThrow_InvalidPasswordFormatException(string Password)
+        {
+            try
+            {
+                RegistrationCheck registrationCheck = new RegistrationCheck();
+                registrationCheck.CheckPassword(Password);
+            }
+            catch (UserRegistrationException exception)
+            {
+                Assert.AreEqual("Invalid Password Format", exception.Message);
+            }
+        }
     }
 }
+    
+

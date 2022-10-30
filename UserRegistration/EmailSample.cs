@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace UserRegistration
 {
-    class EmailSample
+   public class EmailSample
     {
         public void ValidateEmail()
         {
@@ -42,5 +42,5 @@ namespace UserRegistration
         }
     }
 }
-    
+
 
